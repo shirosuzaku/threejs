@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kripto City</title>
+    <script type="module" crossorigin src="./assets/index.ea85fb05.js"></script>
+    <link rel="stylesheet" href="./assets/index.622f210f.css">
+  </head>
+  <body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="ui">
+    
+      <div class="container">
+    
+        <button id="btnCenter">Center</button>
+
+        <div>
+          <p>Enter token address</p>
+          <div class="tokenbar" style="display: flex;">
+            <div class="bar">
+              <input type="text" placeholder="token address" id="tokenInput">
+              <button id="tokenPaste">paste</button>
+            </div>
+            <button id="tokenSearch">Browse</button>
+          </div>
+
+        </div>
+
+        <div class="counter">
+          <p># of Holders</p>
+          <p id="holderCount"></p>
+        </div>
+
+        <div class="searchbar">
+          
+          <div style="position: relative; width: 300px;">
+            <div class="holderBar">
+              <input type="text" id="search" placeholder="look for holder" style="width: 100%;" />
+              <button id="holderPaste">paste</button>
+            </div>
+            <div id="dropdown" class="dropdown"></div>
+          </div>
+        
+        </div>
+    
+        <div class="result">
+          <fieldset>
+            <legend>Holder</legend>
+            <p class="resultDisplay"></p>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+    <div class="loaderBg">
+
+      <div class="pos">
+        <!-- From Uiverse.io by ZacharyCrespin --> 
+        <div class="loader">
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+          <div class="loader-square"></div>
+        </div>
+      </div>
+
+    </div>
+
+    
+  </body>
+</html>
