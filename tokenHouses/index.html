@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kripto City</title>
-    <script type="module" crossorigin src="./assets/index.ea85fb05.js"></script>
-    <link rel="stylesheet" href="./assets/index.622f210f.css">
+    <script type="module" crossorigin src="/assets/index.d80c00fd.js"></script>
+    <link rel="stylesheet" href="/assets/index.fc812e69.css">
   </head>
   <body>
 
@@ -15,25 +15,18 @@
     
       <div class="container">
     
-        <button id="btnCenter">Center</button>
+        <!-- replace with logo top left -->
+        <button id="btnCenter">
+          <img src="https://raw.githubusercontent.com/solana-labs/token-list/main/assets/mainnet/So11111111111111111111111111111111111111112/logo.png" alt="" srcset="">
+        </button>
 
-        <div>
-          <p>Enter token address</p>
-          <div class="tokenbar" style="display: flex;">
-            <div class="bar">
-              <input type="text" placeholder="token address" id="tokenInput">
-              <button id="tokenPaste">paste</button>
-            </div>
-            <button id="tokenSearch">Browse</button>
-          </div>
-
-        </div>
-
-        <div class="counter">
+        <!-- top right -->
+        <div class="counter blurBg">
           <p># of Holders</p>
           <p id="holderCount"></p>
         </div>
 
+        <!-- center top -->
         <div class="searchbar">
           
           <div style="position: relative; width: 300px;">
@@ -46,28 +39,49 @@
         
         </div>
     
+        <!-- bottom left -->
         <div class="result">
           <fieldset>
             <legend>Holder</legend>
             <p class="resultDisplay"></p>
           </fieldset>
         </div>
+
+
+        <!-- bototm right -->
+        <div class="logs blurBg">
+          Recent transactions
+          <div class="list">
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+            <p class="logItem">---</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <div class="loaderBg">
 
-      <div class="pos">
-        <!-- From Uiverse.io by ZacharyCrespin --> 
-        <div class="loader">
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
-          <div class="loader-square"></div>
+      <div class="tokenLogo"></div>
+
+      <div class="three">
+        <div class="loaderBar left"></div>
+        <div class="logo">
+            <img src="/assets/img.bd4eda05.png" alt="">
         </div>
+        <div class="loaderBar right"></div>
+      </div>
+
+      <div class="description">
+        your city is under construction please wait a moment :)
       </div>
 
     </div>
